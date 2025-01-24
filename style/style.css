@@ -5,7 +5,7 @@
 .bg{
    background-color: rgba(229, 84, 115, 0.1);
 }
-header, main{
+.banner{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -19,7 +19,7 @@ header, main{
     color: #272727;
     margin-bottom: 32px;
 }
-.banner-description{
+.banner-description, .featured-description{
     font-weight: 400;
     font-size: 1.12rem;
     color: rgba(39, 39, 39, 0.6);
@@ -34,10 +34,65 @@ header, main{
     background-color: #E55473;
     border: none;
 }
+.btn-primary:hover{
+    color: lawngreen;
+    background-color: darkblue;
+}
 .banner >img{
     width: 100%;
 }
-
+section{
+    margin-top: 128px;
+}
+/* section style */
+.featured-text{
+    max-width: 594px;
+    margin: 0 auto;
+    text-align: center;
+}
+.featured-title{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #272727;
+    margin-bottom: 24px;
+}
+.featured-containar{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.featured-containt{
+    text-align: center;
+}
+.featured-containt-1{
+    padding: 110px 78px 0 76px;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    background-color: rgba(167, 33, 98, 0.15);
+}
+.featured-containt-2{
+    padding: 117px 48px 51px 48px ;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    background-color: rgba(5, 151, 160, 0.15);
+}
+.featured-containt-3{
+    padding: 68px 75px 0 ;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    background-color: rgba(71, 125, 17, 0.15);
+}
+.featured-containt-1 >img, .featured-containt-2 >img, .featured-containt-3 >img{
+    width: 100%;
+}
+.featured-sub-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #272727;
+}
 
 
 
@@ -54,7 +109,10 @@ header, main{
 
 
 @media screen and (max-width:576px) {
-    .banner{
+    .banner, .featured-containar{
         flex-direction: column;
+    }
+    .banner-containt{
+        padding: 10px;
     }
 }
